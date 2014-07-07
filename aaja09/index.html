@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Demystifying Adobe Flash, by Daigo Fujiwara (August 2009)</title>
+
+	<!-- metadata -->
+
+	<!-- "generator" can be the program used to generate this, or (by default) an indication that it's an S5 slide show. -->
+	<meta name="generator" content="S5" />
+
+	<!-- "version" identifies the particular version of S5 -->
+	<meta name="version" content="S5 1.1" />
+
+	<!-- "presdate" identifies the date of the presentation.  Example: "20061231" is December 31 2006 -->
+	<meta name="presdate" content="20090813" />
+
+	<meta name="author" content="Daigo Fujiwara" />
+	<meta name="company" content="The Boston Globe/Boston.com" />
+
+	<!-- configuration parameters -->
+		<!-- Set defaultView to "outline" if you want the default view to be as a plain web page; otherwise, use "slideshow." -->
+		<meta name="defaultView" content="slideshow" />
+
+		<!-- Set controlVis to "hidden" if you want the controls hidden.  Otherwise, use "visible."  The default is "visible." -->
+		<meta name="controlVis" content="hidden" />
+
+	<!-- style sheet links -->
+	<!-- these control the visual appearance of the slide show. -->
+	<link rel="stylesheet" href="ui/glossdeck/slides.css" type="text/css" media="projection" id="slideProj" />
+	<link rel="stylesheet" href="ui/glossdeck/outline.css" type="text/css" media="screen" id="outlineStyle" />
+	<link rel="stylesheet" href="ui/glossdeck/print.css" type="text/css" media="print" id="slidePrint" />
+	<link rel="stylesheet" href="ui/glossdeck/opera.css" type="text/css" media="projection" id="operaFix" />
+
+	<!-- S5 JS -->
+	<!-- this script handles all the interactivity, e.g. making the slides advance -->
+	<script src="ui/glossdeck/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<div class="layout">
+		<div id="controls"><!-- DO NOT EDIT --></div>
+		<div id="currentSlide"><!-- DO NOT EDIT --></div>
+
+		<div id="header">
+			<div id="logo"><!-- DO NOT EDIT --></div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<h1>AAJA National Convention &#9830; Boston Seaport Hotel &#9830; August 13-14, 2009</h1>
+		<h2>Demystifying Flash &#9830; <a href="http://daigofujiwara.com/files/aaja09/">daigofujiwara.com/files/aaja09</a></h2>
+	</div>
+
+
+<div class="presentation">
+
+<div class="slide">
+	<h1>Demystifying Flash</h1>
+	<h3>Daigo Fujiwara</h3>
+	<h4>Information Graphic Artist,<br>The Boston Globe/Boston.com <br> daigo[at]daigofujiwara.com</h4>
+</div>
+
+
+<div class="slide">
+	<h1>Summary of this workshop</h1>
+	<p>Have you ever wanted to fix a typo in a published Flash piece after
+the designer has gone home for the day?</p>
+<p>In this session, reporters and editors get a brief introduction to Flash and learn how to make changes to a completed project without breaking it.</p>
+<p>This class aims to demystify the widely-used product by explaining what it does and how it is used on a news organization's Web site.</p>
+<p>Flash designer/developer jargon is explained. No Flash experience is required.</p>
+<small>Post conference note: Exercises are designed to be done with instructor in the room, so those slides do not contain detail instructions.</small>
+	<div class="handout"></div>
+</div>
+
+
+<div class="slide">
+	<h1>What is Flash?</h1>
+	<p><a href="http://www.adobe.com/products/flash/">Adobe Flash</a> is a multimedia creation (authoring) tool currently developed and distributed by Adobe Systems Incorporated.</p>
+    
+	<ul>
+		<li><a href="http://www.adobe.com/products/flash/">Adobe site</a></li>
+		<li><a href="http://en.wikipedia.org/wiki/Adobe_flash">Wikipedia</a></li>
+	</ul>
+    <p>A "Flash movie" can display <em>content (text)</em> and <em>shapes</em>, <em>simple animation</em>, <em>video</em>, and <em>sound</em>.</p>
+    <p>It is a powerful tool that is also used to create Rich Internet Application (RIA). </p>
+	<div class="handout"></div>
+</div>
+
+<div class="slide">
+	<h1>But before you continue... (1/3)</h1>
+	<p><strong>The web in a nutshell</strong></p>
+	
+	<p>
+    Using <strong>web browser</strong> (such as <a href="http://ie8.msn.com/">Internet Explorer</a>, <a href="http://www.mozilla.com/en-US/firefox/">FireFox</a>, <a href="http://www.apple.com/safari/">Safari</a>, or <a href="http://www.google.com/chrome">Google Chrome</a>), a user on an internet-enabled machine connects to a <strong>remote machine</strong> (web server, identified by Uniform Resource Locators (URL)), requests specific <strong>documents</strong>, downloads them and view them on the local machine. </p>
+	<div class="handout"></div>
+</div>
+
+<div class="slide">
+	<h1>But before you continue... (2/3)</h1>
+	<p><strong>The web in a nutshell</strong></p>
+	<p>
+	<center>
+   <img src="ui/img/internet.png" alt="" border="0" />
+   </center>
+   </p>
+	<div class="handout"></div>
+</div>
+
+<div class="slide">
+	<h1>But before you continue... (3/3)</h1>
+	<p><strong>The web in a nutshell</strong></p>
+
+	<p>While web documents can conceivably be in any format, Hyper Text Markup Language (HTML, <code>.html</code>) is the most widely used document format on the web. </p>
+	<p> Other familiar formats include <code>.jpg</code>, <code>.gif</code>, or <code>.png</code> for images, <code>.mp3</code> for music, or <code>.pdf</code> for downloadable documents.</p>
+	<p>Flash Movie is one of those document format. Most modern web browser with Flash Player plug-in installed can view and use the downloaded Flash Movie.</p>
+	<div class="handout"></div>
+</div>
+
+<div class="slide">
+	<h1>Why use Flash?</h1>
+	<p>According to <a href="http://www.adobe.com/products/player_census/flashplayer/version_penetration.html">Millward Brown survey, conducted June 2009</a>, Flash Player 7 is installed on <strong>99.0% of Internet-enabled desktops</strong> in US, Canada, UK, France, Germany, and Japan.</p>
+	<p>98.8% has Flash Player 8, and 86.7% has Flash Player 9.</p>
+	<p>Flash has benefitted greatly from popularity of websites like <a href="http://www.myspace.com/">MySpace</a> or <a href="http://www.youtube.com/">YouTube</a>, which use the Flash technology to display their video or sounds.
+</p>
+	<div class="handout"></div>
+</div>
+    
+
+
+<div class="slide">
+	<h1>Example of Flash use in news</h1>
+	<p>How is it used on a news organization's Web site? Some links:</p>
+
+	<ul><li><ul>
+		<li><a href="http://www.snd.org/competitions/sndies.html">SND's The Best of Multimedia Design Award winners</a></li>
+		<li><a href="http://www.interactivenarratives.org/">Interactive Narratives</a></li>
+		<li><a href="http://boston.com/interactive/graphics/">Boston Globe's Interactive Graphics page</a></li>
+		<li><a href="http://www.nytimes.com/pages/multimedia/index.html">New York Times multimedia page</a></li>
+		<li><a href="http://www.portfolio.com/multimedia/interactive-features/">Portfolio.com, Interactive features</a></li>
+		<li><a href="http://www.sptimes.com/News/webspecials/multimedia/">St. Petersburg Times multimedia</a></li>
+		<li><a href="http://ngm.nationalgeographic.com/interactive">National Geographic interactive</a></li>
+		<li><a href="http://www.sun-sentinel.com/broadband/theedge/">Sun Sentinel's "The Edge"</a></li>
+		<li><a href="http://graficos.lainformacion.com/">La Informacion's graphics (Spanish)</a></li>
+		<li><a href="http://news.bbc.co.uk/2/hi/in_depth/interactives/default.stm">BBC's interactive and infographics</a></li>
+	</ul></li></ul>
+	<div class="handout"></div>
+</div>
+
+
+
+
+
+
+<div class="slide">
+	<h1>Creating Flash movies</h1>
+	<p>To create your own Flash movies, you do need to have (buy) a Flash software.</p>
+
+	<p>If you do not have Flash, you can download a 30 days free trial version of Flash from <a href="http://www.adobe.com/products/flash/">Adobe (click on "Get the trial" on the left)</a>.</p>
+	
+	<p>In this workshop, I will assume that you have access to a computer that has Flash loaded.</p>
+	<div class="handout"></div>
+</div>
+
+
+
+
+
+
+<div class="slide">
+	<h1>Flash file types</h1>
+	<p>You will see following files when dealing with Flash.</p>
+	<ul>
+	<li><strong>Flash file:</strong> <code>.fla</code> This file can only be opened using Adobe Flash. When you "publish" this file, a .swf file will appear.</li>
+	<li><strong>Flash Movie:</strong> <code>.swf</code> This is the final product that internet users will see, and can be played on Flash Player. You can not edit the file, or take the file apart.</li>
+	<li><strong>Action Script:</strong> <code>.as</code> (optional)</li>
+	<li><strong>Data files:</strong> such as external data XML (Extensible Markup Language) file <code>.xml</code> (optional)</li>
+	<li><strong>HTML:</strong> <code>.html</code> Most of the time, movies are embedded in HTML documents.</li>
+</ul>
+	
+	<div class="handout">About FLA vs SWF. Those who used PhotoShop, think .psd file vs .jpg files. Or in Microsoft Word, .doc file vs .pdf file - users won't be able to edit the produced files.</div>
+</div>
+
+
+<div class="slide">
+	<h1>Finding .swf on the web page</h1>
+	<p>By reading the html source of the page, you can locate the problem <code>.swf</code> file containing misspelling. To view html source of web page:</p>
+	<ul>
+	<li>In FireFox, go to <code>View > Page Source</code> (Or Ctrl+U on PC or Command-U on Mac)</li>
+	<li>Internet Explorer 8, go to <code>Page > View Source</code>  </li>
+	<li>Google Chrome, <code>Page > Developer > View Source</code> (or Ctrl+U)</li>
+	<li>Apple Safari, go to <code>View > View Source</code> (or command-Option-U)</li>
+</ul>
+
+
+	<div class="handout"></div>
+</div>
+
+<div class="slide">
+	<h1>Editing the problem file</h1>
+	<P>You are going to need to replace the <code>.swf</code> file on the web server. To do that, you may need FTP (File Transfer Protocol) software or use your company's CMS (Content Management System). Every company have different way of doing this. Ask your web operations.</p>
+	
+	<p>But first, you need to <strong>re-publish</strong> a correctly spelled <code>.swf</code> file.</p>
+	<p>In order to do so, you need to have access to the original <code>.fla</code> which is editable.</p>
+	
+	<p>It is generally good idea to have your co-workers keep the original <code>.fla</code> files stored somewhere others can get to, just in case others has to make a simple update.</p>
+
+	<div class="handout"></div>
+</div>
+
+
+
+<div class="slide">
+	<h1>Opening .fla file</h1>
+	<p>Once you have <code>.fla</code> file, you now need to locate the misspelling in the file. When you open a <code>.fla</code> file, this is what you'll see.</p>
+	<center><img src="ui/img/flash-ui.png" alt="" border="0" /></center>
+	<div class="handout"></div>
+</div>
+
+
+
+<div class="slide">
+	<h1>Flash interface explained (1/2)</h1>
+	<ul>
+	<li><strong>Stage:</strong> Where you put the images, shapes and text</li>
+	<li><strong>Timeline and layers:</strong> shows time progression. When there is <code>"a"</code> in a frame, that means there is an ActionScripts.
+	<center>
+	<img src="ui/img/timeline.png" alt="" border="0" />
+	</center>
+	</li>
+	<li><strong>Panels:</strong> provide various controls. Most important ones are "Properties Inspector panel," "Actions panel" and "Library panel"</li>
+	</ul>
+	<div class="handout"></div>
+</div>
+
+<div class="slide">
+	<h1>Flash interface explained (1/2)</h1>
+	<p>Items in toolbar</p>
+	<center><img src="ui/img/toolbar.png" alt="" border="0" /></center>
+	<ul>
+	<li><strong>Selection tool:</strong> used for selecting things on the stage</li>
+	<li><strong>Subselection tool:</strong> used for selecting and editing vector points on an object, or selecting subsets of grouped items.</li>
+	<li><strong>Text tool:</strong> used for typing text. You can change the font, size and color in the properties panel.</li>
+	</ul>
+	</p>
+	<div class="handout"></div>
+</div>
+
+
+
+<div class="slide">
+	<h1>Exercise 1: Fix misspelled words</h1>
+	<p>(You need <a href="example_files/example1.zip">"example1" files</a>.)</p>
+	<p>View this <a href="example_files/example1/train-crash.html">example flash movie</a>.</p>
+	<p>In the <code>train-crash.fla</code> file, locate misspelled words. 
+There are three.</p>
+	 <ul>
+	<li>train ("traxxin"), </li>
+	<li>station ("staxxtion") and </li>
+	<li>hospital ("hosxxpital")</li>
+</ul>
+
+	<div class="handout"></div>
+</div>
+
+
+
+
+
+<div class="slide">
+	<h1>Exercise 2: Fix misspelled words</h1>
+	<p>(You need <a href="example_files/example2.zip">"example2" files</a>.)</p>
+	<p>View this <a href="example_files/example2/ortiz-chart.html">example flash movie</a>. (Originally appeared on <a href="http://www.boston.com/interactive/graphics/20090730_ortiz_stats/">Boston.com, July 30, 2009</a>) </p>
+	<p>In the <code>ortiz-chart.fla</code> file, locate misspelled words.
+There are two. </p>
+<ul>
+	<li>Slugging ("Sluxxgging") and </li>
+	<li>drug ("drxxug").</li>
+</ul>
+<small>NOTE: to get <code>Tweener class</code> working, <code> File > Publishing Settings > "Flash" tab > Actionscript Version "Settings" > </code> and in <code>"Classpath"</code> select the <code>"aslibrary"</code> included in the example file</small>
+	<div class="handout"></div>
+</div>
+
+
+<div class="slide">
+	<h1>Exercise 3 (1/3)</h1>
+	<p>(You need <a href="example_files/example3.zip">"example3" files</a>.)</p>
+	<p>Build train-crash movie from scratch, using following text and simple ActionScript instruction.</p>
+	<p>Your final product will look something similar to <a href="example_files/example1/train-crash.html">this</a>. </p>
+	<p>Use <code>train-crash-blank.fla</code> file as a base.</p>
+	<div class="handout"></div>
+</div>
+
+
+
+
+<div class="slide">
+	<h1>Exercise 3: continued, text (2/3)</h1>
+	
+<p><strong>Green line Train Crash</strong></p>	
+<ol>
+	<li>Collision was between Government Center and Park Street stations</li>
+
+	<li>The first train was waiting at a red light to enter Park Street Station</li>
+
+	<li>The other train crashed into the rear of the stationary vehicle. The impact jolted the trolley about 100 feet toward the Park Street station. Both trolleys derailed and sustained significant damage at the point of impact.</li>
+
+	<li>49 people were taken to the hospital and 75 others walked away on their own. Some people had to be removed from the trolley with extrication equipment.</li>
+</ol>
+	<div class="handout"></div>
+</div>
+
+
+
+
+<div class="slide">
+	<h1>Exercise 3: continued, script (3/3)</h1>
+	<p><strong>A simple button to "Play" the movie</strong></p>
+<ol>
+	<li>Drag "Next" symbol from the library. </li>
+	<li>Name it "next_mc" in the properties panel. </li>
+	<li>Write the following code<br/>
+	<code>
+	next_mc.addEventListener(MouseEvent.CLICK, onClick);<br>
+	function onClick(e){<br>
+	&nbsp;&nbsp;this.play();<br>
+	} </code></li>
+</ol>
+<div class="handout"></div>
+</div>
+
+
+
+
+<div class="slide">
+	<h1>Action Script 3</h1>
+<p>Some keys to learning ActionScript 3</p>	
+<ul>
+	<li><strong>Syntax:</strong> special characters such as <code>; ( ) { } . " : </code> always means something. For example, <code>;</code> always indicate that it is the end of statement.</li>
+	<li>Use <code>trace();</code> and locate exactly where your code went wrong.</li>
+	<li>Learn to use descriptive naming conventions. For example, using <code>_mc</code> for Movie Clip, <code>_txt</code> for Text, <code>_btn</code> for button makes it easier to understand what it is when you are writing code.</li>
+</ul>	<div class="handout"></div>
+</div>
+
+<div class="slide">
+	<h1>Resources</h1>
+	<p><ul>
+	<li>Adobe's <a href="http://www.adobe.com/devnet/flash/?view=gettingstarted">Getting started with Flash</a></li>
+	<li><a href="http://www.kirupa.com/developer/flash/index.htm">Kirupa's Flash tutorials</a></li>
+	<li><a href="http://www.lynda.com/home/ViewCourses.aspx?lpk0=267">Lynda.com's tutorial</a> (some of the lessons are free)</li>
+	<li><a href="http://w3schools.com/flash/default.asp">w3schools.com Flash</a></li>
+	<li><a href="http://www.tutorialized.com/tutorials/Flash/1">Tutorialized.com Flash</a></li>
+	<li><a href="http://www.foundation-flash.com/">Foundation Flash</a></li>
+</ul>
+
+	</p>
+	<div class="handout"></div>
+</div>
+
+
+</div>
+<img id="background" src="ui/glossdeck/gradient-bg.jpg" alt="" />
+</body>
+</html>
